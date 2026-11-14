@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wenderson Henrique — Desenvolvedor Full-stack</title>
+  <meta name="description" content="Portfólio de Wenderson Henrique Gonçalves dos Santos — desenvolvedor full-stack de Conselheiro Lafaiete, MG. Interfaces, APIs, dados, IoT e projetos que saem do papel.">
+  <meta name="theme-color" content="#07030C">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://wenderson-hgs.github.io/">
+  <meta property="og:title" content="Wenderson Henrique — Desenvolvedor Full-stack">
+  <meta property="og:description" content="Sistemas, interfaces, dados e hardware. Portfólio de Wenderson Henrique, desenvolvedor full-stack.">
+  <meta property="og:image" content="https://wenderson-hgs.github.io/assets/img/proj-interclasse.jpg">
+  <link rel="canonical" href="https://wenderson-hgs.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wenderson Henrique — Desenvolvedor Full-stack">
+  <meta name="twitter:description" content="Sistemas, interfaces, dados e hardware. Portfólio de Wenderson Henrique, desenvolvedor full-stack.">
+  <meta name="twitter:image" content="https://wenderson-hgs.github.io/assets/img/proj-interclasse.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>
+    document.documentElement.classList.add('js');
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        if (!document.body.classList.contains('is-loading')) return;
+        document.body.classList.remove('is-loading');
+        document.body.classList.add('is-ready');
+        var preloader = document.getElementById('preloader');
+        if (preloader) preloader.classList.add('is-done');
+      }, 2400);
+    });
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Wenderson Henrique Gonçalves dos Santos",
+    "jobTitle": "Desenvolvedor Full-stack",
+    "email": "mailto:wendersonhgs@gmail.com",
+    "telephone": "+55-31-98278-7444",
+    "url": "https://wenderson-hgs.github.io/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Conselheiro Lafaiete",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Escola Estadual Monsenhor Horta"
+    },
+    "sameAs": ["https://github.com/wenderson-hgs", "https://www.instagram.com/wenderson.ww"],
+    "knowsAbout": ["TypeScript", "React", "Node.js", "Java", "Spring Boot", "PostgreSQL", "Docker", "Arduino", "Godot"]
+  }
+  </script>
+</head>
+<body class="is-loading">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__brand">whgs<span>.dev</span></div>
+      <div class="preloader__meter"><i></i></div>
+      <div class="preloader__meta mono"><span>montando o portfólio</span><span id="loader-number">00</span></div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"><i id="scroll-bar"></i></div>
+
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor__ring"></span>
+    <span class="cursor__dot"></span>
+    <span class="cursor__label" id="cursor-label"></span>
+  </div>
+
+  <div class="ambient" aria-hidden="true">
+    <span class="orb orb--a"></span>
+    <span class="orb orb--b"></span>
+    <span class="orb orb--c"></span>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="logo" aria-label="Wenderson — voltar ao início">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">whgs<span>.dev</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#work"><b>01</b>Projetos</a>
+        <a href="#formacao"><b>02</b>Formação</a>
+        <a href="#about"><b>03</b>Sobre</a>
+        <a href="#stack"><b>04</b>Stack</a>
+        <a href="#contact"><b>05</b>Contato</a>
+      </nav>
+
+      <div class="header-right">
+        <span class="availability"><span class="status-dot"></span>Disponível para projetos</span>
+        <a href="mailto:wendersonhgs@gmail.com" class="btn" data-cursor="enviar">Iniciar conversa <span>↗</span></a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-nav" aria-label="Navegação mobile">
+      <a href="#work"><span>01</span>Projetos<em aria-hidden="true">↗</em></a>
+      <a href="#formacao"><span>02</span>Formação<em aria-hidden="true">↗</em></a>
+      <a href="#about"><span>03</span>Sobre<em aria-hidden="true">↗</em></a>
+      <a href="#stack"><span>04</span>Stack<em aria-hidden="true">↗</em></a>
+      <a href="#contact"><span>05</span>Contato<em aria-hidden="true">↗</em></a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="mailto:wendersonhgs@gmail.com">wendersonhgs@gmail.com</a>
+      <a href="tel:+5531982787444">+55 (31) 98278-7444</a>
+      <a href="https://www.instagram.com/wenderson.ww" target="_blank" rel="noopener">instagram.com/wenderson.ww</a>
+      <a href="https://github.com/wenderson-hgs" target="_blank" rel="noopener">github.com/wenderson-hgs</a>
+      <span class="mono">Conselheiro Lafaiete · MG · 2026</span>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow mono hero-fade" style="--delay:.14s">
+            <span class="eyebrow__index">// portfólio 2026</span>
+            <span class="eyebrow__line" aria-hidden="true"></span>
+            <span>full-stack developer</span>
+            <b>·</b>
+            <span>Brasil</span>
+          </p>
+
+          <h1 id="hero-title">
+            <span class="hero-line"><span>Sistemas que</span></span>
+            <span class="hero-line"><span class="outline">saem do</span></span>
+            <span class="hero-line"><span>papel<span class="hero-dot">.</span></span></span>
+          </h1>
+
+          <p class="hero-intro hero-fade" style="--delay:.3s">
+            Sou <strong>Wenderson Henrique Gonçalves dos Santos</strong>. Construo a camada que faz a ideia funcionar:
+            <strong>interfaces, APIs, dados e hardware</strong> conversando sem atrito. Do protótipo ao deploy.
+          </p>
+
+          <div class="hero-actions hero-fade" style="--delay:.4s">
+            <a href="#work" class="btn btn-solid magnetic" data-cursor="explorar">Ver projetos <span>↓</span></a>
+            <a href="mailto:wendersonhgs@gmail.com" class="btn magnetic" data-cursor="falar">Falar comigo <span>↗</span></a>
+          </div>
+
+          <div class="hero-meta hero-fade" style="--delay:.5s">
+            <span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Conselheiro Lafaiete, MG
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-5 9 5-9 5-9-5Z"/><path d="M7 11v5c3 2 7 2 10 0v-5"/><path d="M21 9v6"/></svg>
+              Téc. em Desenvolvimento de Sistemas
+            </span>
+            <span><span class="status-dot"></span>Disponível para projetos</span>
+          </div>
+        </div>
+
+        <div class="hero-side hero-fade" style="--delay:.44s">
+          <span class="orbit orbit--a" aria-hidden="true"></span>
+          <span class="orbit orbit--b" aria-hidden="true"></span>
+          <div class="glow" aria-hidden="true"></div>
+
+          <span class="float-chip chip--1" aria-hidden="true">// full-stack</span>
+          <span class="float-chip chip--2" aria-hidden="true"><span class="status-dot"></span>disponível</span>
+
+          <figure class="portrait-card">
+            <div class="portrait-bar">
+              <span class="t-dot t-dot--red"></span>
+              <span class="t-dot t-dot--yellow"></span>
+              <span class="t-dot t-dot--green"></span>
+              <span class="portrait-title">wenderson_hgs.id</span>
+              <span class="portrait-zoom">2026 · 100%</span>
+            </div>
+            <div class="portrait-media">
+              <img src="assets/img/wenderson.jpg" alt="Retrato de Wenderson Henrique Gonçalves dos Santos" width="620" height="720" fetchpriority="high" decoding="async">
+              <span class="portrait-scan" aria-hidden="true"></span>
+              <span class="corner corner--tl" aria-hidden="true"></span>
+              <span class="corner corner--tr" aria-hidden="true"></span>
+              <span class="corner corner--bl" aria-hidden="true"></span>
+              <span class="corner corner--br" aria-hidden="true"></span>
+              <div class="portrait-hud" aria-hidden="true"><span>// retrato_01</span><span>lafaiete · mg</span></div>
+              <figcaption class="portrait-caption">
+                <span class="mono">Wenderson Henrique</span>
+                <strong>Full-stack<br>developer<span class="hero-dot">.</span></strong>
+              </figcaption>
+            </div>
+            <div class="portrait-foot">
+              <span><span class="status-dot"></span>aberto a oportunidades</span>
+              <span>20.66° S · 43.79° O</span>
+            </div>
+          </figure>
+
+          <div class="hero-readout" aria-hidden="true">
+            <span class="prompt">$</span>
+            <span class="readout-prefix">focus</span>
+            <span id="typewriter">interfaces que respondem</span>
+            <span class="caret"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stats" aria-label="Números do portfólio">
+        <div class="stat"><b data-count="4" data-pad="2">04</b><span>projetos no portfólio</span></div>
+        <div class="stat"><b data-count="3" data-pad="2">03</b><span>camadas: web, dados e hardware</span></div>
+        <div class="stat"><b data-count="11" data-pad="2">11</b><span>testes no Chem Toolkit</span></div>
+        <div class="stat stat--inf"><b>∞</b><span>curiosidade para continuar</span></div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>TypeScript</span><i>◆</i><span>React</span><i>◆</i><span>Node.js</span><i>◆</i><span>Java 21</span><i>◆</i><span>Spring Boot</span><i>◆</i><span>PostgreSQL</span><i>◆</i><span>Supabase</span><i>◆</i><span>Docker</span><i>◆</i><span>RabbitMQ</span><i>◆</i><span>Arduino</span><i>◆</i><span>Kotlin</span><i>◆</i><span>Godot 4</span><i>◆</i>
+        </div>
+        <div class="marquee-group">
+          <span>TypeScript</span><i>◆</i><span>React</span><i>◆</i><span>Node.js</span><i>◆</i><span>Java 21</span><i>◆</i><span>Spring Boot</span><i>◆</i><span>PostgreSQL</span><i>◆</i><span>Supabase</span><i>◆</i><span>Docker</span><i>◆</i><span>RabbitMQ</span><i>◆</i><span>Arduino</span><i>◆</i><span>Kotlin</span><i>◆</i><span>Godot 4</span><i>◆</i>
+        </div>
+      </div>
+    </div>
+
+    <section class="work wrap" id="work" aria-labelledby="work-title">
+      <div class="section-head mono reveal">
+        <span>// 01 — projetos selecionados</span>
+        <span class="right">04 cases · 2025—2026 · status: ativo</span>
+      </div>
+      <div class="work-title-row">
+        <h2 class="section-title reveal" id="work-title" style="--delay:.05s">Projetos em <span class="thin">produção</span><span class="hero-dot">.</span></h2>
+        <div class="work-aside">
+          <p class="reveal" style="--delay:.12s">Coisas que começaram como problema e terminaram como sistema. Algumas rodam na web, outras piscam em uma maquete.</p>
+          <a class="text-link gh-link reveal" style="--delay:.16s" href="https://github.com/wenderson-hgs" target="_blank" rel="noopener" data-cursor="ver código">código aberto no github <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="work-grid">
+        <article class="p-card reveal" data-project="eventflow" data-cursor="detalhes" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Abrir detalhes do projeto EventFlow" style="--delay:.04s">
+          <div class="p-cover">
+            <img src="assets/img/proj-eventflow.jpg" alt="Print do serviço de reserva de ingressos do EventFlow em Java, no editor" loading="lazy" width="1200" height="800">
+            <span class="p-index">[01]</span>
+            <span class="p-status">backend</span>
+          </div>
+          <div class="p-body">
+            <p class="p-kicker mono">eventos · pagamentos · recomendações</p>
+            <h3>EventFlow <span class="arr" aria-hidden="true">↗</span></h3>
+            <p>Ingressos, pagamentos sandbox e recomendações em uma arquitetura de microsserviços com outbox, RabbitMQ e idempotência.</p>
+            <div class="p-tags"><span class="tag">Java 21</span><span class="tag">Spring</span><span class="tag">RabbitMQ</span><span class="tag">Docker</span></div>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-project="maquete" data-cursor="detalhes" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Abrir detalhes do projeto Maquete.OS" style="--delay:.09s">
+          <div class="p-cover">
+            <img src="assets/img/proj-maquete.jpg" alt="Site do Ferrorama 3D — hero da maquete ferroviária com estatísticas do projeto" loading="lazy" width="1200" height="800">
+            <span class="p-index">[02]</span>
+            <span class="p-status">iot</span>
+          </div>
+          <div class="p-body">
+            <p class="p-kicker mono">dashboard · websocket · hardware</p>
+            <h3>Maquete.OS <span class="arr" aria-hidden="true">↗</span></h3>
+            <p>Gêmeo digital de uma maquete industrial: dashboard via WebSocket, controle Bluetooth e firmware para ferrovia e caminhão.</p>
+            <div class="p-tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Arduino</span><span class="tag">Kotlin</span></div>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-project="chem" data-cursor="detalhes" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Abrir detalhes do projeto Chem Toolkit" style="--delay:.06s">
+          <div class="p-cover">
+            <img src="assets/img/proj-chem.jpg" alt="Tela do Chem Toolkit — tabela periódica interativa com os 118 elementos em tema escuro" loading="lazy" width="1200" height="800">
+            <span class="p-index">[03]</span>
+            <span class="p-status">web app · online</span>
+          </div>
+          <div class="p-body">
+            <p class="p-kicker mono">química · algoritmos · interface</p>
+            <h3>Chem Toolkit <span class="arr" aria-hidden="true">↗</span></h3>
+            <p>Tabela periódica, massa molar e balanceamento de equações em TypeScript puro. Sem framework, com testes.</p>
+            <div class="p-tags"><span class="tag">TypeScript</span><span class="tag">Vite</span><span class="tag">Vitest</span></div>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-project="interclasse" data-cursor="detalhes" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Abrir detalhes do projeto Interclasse" style="--delay:.11s">
+          <div class="p-cover">
+            <img src="assets/img/proj-interclasse.jpg" alt="Painel do Interclasse — visão geral do campeonato com estatísticas de times e jogadores" loading="lazy" width="1200" height="800">
+            <span class="p-index">[04]</span>
+            <span class="p-status">produto</span>
+          </div>
+          <div class="p-body">
+            <p class="p-kicker mono">futsal · chaveamento · tempo real</p>
+            <h3>Interclasse <span class="arr" aria-hidden="true">↗</span></h3>
+            <p>Chaveamento, agenda sem conflitos, convites com papéis e placar ao vivo para campeonatos escolares de futsal.</p>
+            <div class="p-tags"><span class="tag">TypeScript</span><span class="tag">Supabase</span><span class="tag">RLS</span></div>
+          </div>
+        </article>
+
+        <article class="p-card future-card reveal" style="--delay:.16s">
+          <div class="future-inner">
+            <span class="future-plus" aria-hidden="true">+</span>
+            <span class="mono">// espaço reservado</span>
+            <h3>O próximo projeto pode ser seu<span class="accent">.</span></h3>
+            <p>Este portfólio foi feito para crescer. Novos cases entram aqui conforme saem do forno — inclusive uma ideia que ainda não existe.</p>
+            <a href="mailto:wendersonhgs@gmail.com?subject=Ideia%20de%20projeto" class="text-link" data-cursor="conversar">Propor uma ideia <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="education" id="formacao" aria-labelledby="edu-title">
+      <div class="wrap">
+        <div class="section-head mono reveal">
+          <span>// 02 — formação &amp; cursos</span>
+          <span class="right">base técnica · aprendizado aplicado</span>
+        </div>
+
+        <div class="edu-head">
+          <h2 class="section-title reveal" id="edu-title" style="--delay:.04s">Base técnica.<br><span class="thin">Prática de verdade</span><span class="hero-dot">.</span></h2>
+          <p class="reveal" style="--delay:.11s">A sala de aula deu o vocabulário; os projetos deram o contexto. Minha formação é técnica, mas o jeito de aprender continua sendo construir.</p>
+        </div>
+
+        <div class="edu-grid">
+          <article class="edu-main reveal" data-reveal="left" style="--delay:.05s">
+            <div class="edu-main-head">
+              <span class="mono">// formação principal</span>
+              <span class="edu-badge"><span class="status-dot"></span>ensino técnico</span>
+            </div>
+            <div class="edu-symbol" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m3 9 9-5 9 5-9 5-9-5Z"/><path d="M7 11v5c3 2 7 2 10 0v-5"/><path d="M21 9v6"/></svg>
+            </div>
+            <h3>Desenvolvimento<br>de Sistemas<span class="accent">.</span></h3>
+            <p class="edu-school">Escola Estadual Monsenhor Horta<span>Conselheiro Lafaiete — Minas Gerais</span></p>
+            <div class="edu-divider" aria-hidden="true"></div>
+            <div class="edu-subjects">
+              <span class="mono">disciplinas do curso</span>
+              <div class="tag-cloud">
+                <span class="tag">Front-end</span>
+                <span class="tag">Back-end</span>
+                <span class="tag">Algoritmos &amp; estrutura de dados</span>
+                <span class="tag">Cibersegurança</span>
+                <span class="tag">Desenvolvimento de aplicativo</span>
+                <span class="tag">Empreendedorismo</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="learning-panel reveal" data-reveal="right" style="--delay:.12s">
+            <div class="learning-head mono">
+              <span>// trilhas que viraram projeto</span>
+              <span>aprendizado aplicado</span>
+            </div>
+
+            <article class="learning-item">
+              <span class="learning-index">01</span>
+              <div class="learning-content">
+                <h4>Front-end &amp; interação</h4>
+                <p>Interfaces, design systems e acessibilidade. Aplicado em Interclasse e no painel da Maquete.</p>
+                <div class="learning-tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">CSS</span></div>
+              </div>
+              <span class="learning-arrow" aria-hidden="true">→</span>
+            </article>
+
+            <article class="learning-item">
+              <span class="learning-index">02</span>
+              <div class="learning-content">
+                <h4>Back-end &amp; arquitetura</h4>
+                <p>APIs, mensageria e consistência. Aplicado no EventFlow com quatro microsserviços e no back-end da Maquete.</p>
+                <div class="learning-tags"><span class="tag">Java</span><span class="tag">Spring</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span></div>
+              </div>
+              <span class="learning-arrow" aria-hidden="true">→</span>
+            </article>
+
+            <article class="learning-item">
+              <span class="learning-index">03</span>
+              <div class="learning-content">
+                <h4>Algoritmos &amp; dados</h4>
+                <p>Estruturas, modelagem e validação de dados. Aplicado no Chem Toolkit e nas regras do campeonato do Interclasse.</p>
+                <div class="learning-tags"><span class="tag">TypeScript</span><span class="tag">SQL</span><span class="tag">Testes</span></div>
+              </div>
+              <span class="learning-arrow" aria-hidden="true">→</span>
+            </article>
+
+            <article class="learning-item">
+              <span class="learning-index">04</span>
+              <div class="learning-content">
+                <h4>IoT &amp; mobile</h4>
+                <p>Software encontrando hardware. Aplicado na Maquete com Arduino, Bluetooth, gateway em Node.js e app em Kotlin.</p>
+                <div class="learning-tags"><span class="tag">Arduino</span><span class="tag">Kotlin</span><span class="tag">WebSocket</span></div>
+              </div>
+              <span class="learning-arrow" aria-hidden="true">→</span>
+            </article>
+
+            <div class="learning-note">
+              <span aria-hidden="true">+</span>
+              <p><strong>Espaço para novos cursos</strong>Certificações e formações futuras entram aqui — <em>em atualização contínua</em>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about wrap" id="about" aria-labelledby="about-title">
+      <div class="section-head mono reveal">
+        <span>// 03 — sobre</span>
+        <span class="right">wenderson.hgs / 2026</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <h2 class="reveal" id="about-title" style="--delay:.04s">Curiosidade é a minha <span class="accent">stack</span>.</h2>
+          <p class="about-lead reveal" style="--delay:.08s">Sou <strong>Wenderson Henrique Gonçalves dos Santos</strong>, desenvolvedor full-stack de Conselheiro Lafaiete — MG. Gosto de entender o problema inteiro antes de escrever a primeira linha.</p>
+          <p class="reveal" style="--delay:.11s">Minha base vem do <strong>Curso Técnico de Desenvolvimento de Sistemas</strong> da Escola Estadual Monsenhor Horta. Meu terreno vai de APIs e bancos de dados a dashboards e firmware. Aprendo construindo, documentando e quebrando coisas de propósito.</p>
+          <p class="reveal" style="--delay:.14s">Não me interessa só a tela bonita ou só a API funcionando. O bom produto é aquele em que tudo se encaixa — inclusive o hardware no meio da sala.</p>
+
+          <div class="about-signature reveal" style="--delay:.17s">
+            <img src="assets/img/wenderson.jpg" alt="Wenderson Henrique" width="620" height="720" loading="lazy" decoding="async">
+            <div>
+              <strong>Wenderson H. G. S.</strong>
+              <span>full-stack developer · lafaiete, mg</span>
+            </div>
+          </div>
+
+          <div class="about-cta reveal" style="--delay:.19s">
+            <a class="btn magnetic" href="assets/cv-wenderson-hgs.pdf" download="CV-Wenderson-Henrique-Goncalves-dos-Santos.pdf" data-cursor="baixar">Baixar CV <span aria-hidden="true">↓</span></a>
+            <span class="cta-meta mono">pdf · 1 página · atualizado 11/2026</span>
+          </div>
+
+          <div class="manifesto reveal" style="--delay:.2s">
+            <b>// princípios</b><br>
+            entender antes de codar<br>
+            simplicidade também é feature<br>
+            se não tem teste, tá na dúvida
+          </div>
+
+          <div class="timeline reveal" style="--delay:.23s" aria-label="Linha do tempo de projetos">
+            <div class="timeline-row"><span class="year">2026</span><span class="work-name">EventFlow — backend em microsserviços</span><span class="role">Java</span></div>
+            <div class="timeline-row"><span class="year">2026</span><span class="work-name">Interclasse — produto com Supabase</span><span class="role">TS</span></div>
+            <div class="timeline-row"><span class="year">2026</span><span class="work-name">Chem Toolkit — ferramentas de química</span><span class="role">TS</span></div>
+            <div class="timeline-row"><span class="year">2025—26</span><span class="work-name">Maquete Industrial — gêmeo digital</span><span class="role">IoT</span></div>
+          </div>
+        </div>
+
+        <aside class="about-terminal reveal" data-reveal="right" style="--delay:.12s" aria-label="Informações pessoais em formato de terminal">
+          <div class="terminal-bar">
+            <span class="t-dot t-dot--red"></span>
+            <span class="t-dot t-dot--yellow"></span>
+            <span class="t-dot t-dot--green"></span>
+            <span class="terminal-title">cat about.md</span>
+            <span class="terminal-spacer">UTF-8 · zsh</span>
+          </div>
+          <div class="terminal-body">
+            <div class="term-cmd"><span class="prompt">$</span><span>whoami</span></div>
+            <div class="term-out">Wenderson Henrique Gonçalves dos Santos</div>
+            <div class="term-gap"></div>
+            <div class="term-cmd"><span class="prompt">$</span><span>cat perfil.json</span></div>
+            <div class="term-out">{</div>
+            <div class="term-out">&nbsp;&nbsp;<span class="term-key">"base"</span>: <span class="term-string">"Conselheiro Lafaiete — MG"</span>,</div>
+            <div class="term-out">&nbsp;&nbsp;<span class="term-key">"formacao"</span>: <span class="term-string">"Téc. em Desenvolvimento de Sistemas"</span>,</div>
+            <div class="term-out">&nbsp;&nbsp;<span class="term-key">"escola"</span>: <span class="term-string">"E. E. Monsenhor Horta"</span>,</div>
+            <div class="term-out">&nbsp;&nbsp;<span class="term-key">"foco"</span>: [<span class="term-string">"full-stack"</span>, <span class="term-string">"interfaces"</span>, <span class="term-string">"dados"</span>, <span class="term-string">"iot"</span>]</div>
+            <div class="term-out">}</div>
+            <div class="term-gap"></div>
+            <div class="term-cmd"><span class="prompt">$</span><span>./proximo_projeto.sh</span></div>
+            <div class="term-out accent">→ pode ser o seu.</div>
+          </div>
+          <div class="about-tags" aria-label="Tecnologias">
+            <span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Node</span><span class="tag">Java</span><span class="tag">Spring</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">Godot</span><span class="tag">Arduino</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="capabilities" id="stack" aria-labelledby="stack-title">
+      <div class="wrap">
+        <div class="section-head mono reveal">
+          <span>// 04 — capabilities</span>
+          <span class="right">o que eu coloco na mesa</span>
+        </div>
+
+        <div class="cap-title">
+          <h2 class="reveal" id="stack-title" style="--delay:.04s">Três camadas.<br><span class="thin">Uma ideia só.</span></h2>
+          <p class="reveal" style="--delay:.1s">Do pixel ao sinal elétrico. Trabalho para que front-end, back-end e hardware falem a mesma língua — e o resultado pareça simples para quem usa.</p>
+        </div>
+
+        <div class="cap-grid">
+          <article class="cap reveal" style="--delay:.04s">
+            <span class="cap-num">01 / FRONT</span>
+            <span class="cap-glyph" aria-hidden="true">&lt;/&gt;</span>
+            <h3>Interfaces</h3>
+            <p>Telas que respondem, explicam e não fazem o usuário pensar duas vezes.</p>
+            <ul>
+              <li>TypeScript / React</li>
+              <li>Design systems</li>
+              <li>Motion &amp; acessibilidade</li>
+              <li>Vite / Tailwind</li>
+            </ul>
+          </article>
+
+          <article class="cap reveal" style="--delay:.09s">
+            <span class="cap-num">02 / BACK</span>
+            <span class="cap-glyph" aria-hidden="true">{ }</span>
+            <h3>Sistemas</h3>
+            <p>APIs, modelagem de dados e integrações que aguentam a vida real.</p>
+            <ul>
+              <li>Node.js / Java 21</li>
+              <li>Spring Boot / Express</li>
+              <li>PostgreSQL / Supabase</li>
+              <li>Docker / RabbitMQ</li>
+            </ul>
+          </article>
+
+          <article class="cap reveal" style="--delay:.14s">
+            <span class="cap-num">03 / IOT</span>
+            <span class="cap-glyph" aria-hidden="true">⌁</span>
+            <h3>Conectividade</h3>
+            <p>Quando o software precisa sair da tela e acender um LED do outro lado da sala.</p>
+            <ul>
+              <li>Arduino / C++</li>
+              <li>Bluetooth / Serial</li>
+              <li>Socket.IO / tempo real</li>
+              <li>Android / Kotlin</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="stack-footer reveal" style="--delay:.16s">
+          <span class="mono">// ferramentas em uso</span>
+          <div class="stack-tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">Docker</span>
+            <span class="tag">RabbitMQ</span>
+            <span class="tag">Godot 4</span>
+            <span class="tag">GDScript</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Kotlin</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Git</span>
+            <span class="tag">Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact-box">
+          <div class="section-head mono reveal">
+            <span>// 05 — contato</span>
+            <span class="right"><span class="accent">●</span> disponível para novos projetos</span>
+          </div>
+
+          <h2 class="reveal" id="contact-title" style="--delay:.05s">Tem uma ideia?<br>Vamos <span class="accent">executar</span>.</h2>
+          <p class="contact-copy reveal" style="--delay:.11s">Se você tem um produto para tirar do papel, um sistema para melhorar ou uma ideia estranha o suficiente para valer a pena, <strong>me manda uma mensagem</strong>. Respondo em até 48 horas.</p>
+
+          <div class="contact-actions reveal" style="--delay:.16s">
+            <a class="contact-mail" href="mailto:wendersonhgs@gmail.com" data-cursor="enviar">wendersonhgs@gmail.com <span aria-hidden="true">↗</span></a>
+            <button class="copy-btn" type="button" data-copy="wendersonhgs@gmail.com" aria-label="Copiar endereço de e-mail" data-cursor="copiar">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span id="copy-label">copiar</span>
+            </button>
+          </div>
+
+          <div class="contact-channels reveal" style="--delay:.19s" aria-label="Outros canais de contato">
+            <a href="tel:+5531982787444" data-cursor="ligar">+55 (31) 98278-7444 <span aria-hidden="true">↗</span></a>
+            <a href="https://wa.me/5531982787444?text=Ol%C3%A1%2C%20Wenderson!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener" data-cursor="whatsapp">WhatsApp <span aria-hidden="true">↗</span></a>
+            <a href="https://www.instagram.com/wenderson.ww" target="_blank" rel="noopener" data-cursor="seguir">Instagram <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="contact-bottom reveal" style="--delay:.2s">
+            <div class="socials">
+              <a href="https://github.com/wenderson-hgs" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="mailto:wendersonhgs@gmail.com">E-mail ↗</a>
+              <a href="#top">Voltar ao topo ↑</a>
+            </div>
+            <span class="footer-note"><span class="status-dot"></span>aberto a estágio &amp; freelance</span>
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="wrap footer-inner">
+          <span class="footer-brand">© <span id="current-year">2026</span> Wenderson H. G. S.</span>
+          <span class="credit">feito com café, tipografia e teimosia</span>
+          <span class="local">Brasil <b>·</b> <span id="clock">--:--</span> BRT</span>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <a class="to-top" href="#top" aria-label="Voltar ao topo" data-cursor="topo">↑</a>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="project-modal" id="project-modal" aria-labelledby="modal-title">
+    <div class="modal-bar">
+      <span class="t-dot t-dot--red"></span>
+      <span class="t-dot t-dot--yellow"></span>
+      <span class="t-dot t-dot--green"></span>
+      <span class="mono" id="modal-file">// case file</span>
+      <form method="dialog">
+        <button class="modal-close" type="submit" aria-label="Fechar detalhes do projeto">×</button>
+      </form>
+    </div>
+    <div class="modal-body">
+      <p class="modal-kicker" id="modal-kicker"></p>
+      <h3 class="modal-title" id="modal-title"></h3>
+      <p class="modal-desc" id="modal-desc"></p>
+      <img class="modal-shot" id="modal-shot" alt="" hidden>
+      <ul class="modal-metrics" id="modal-metrics" aria-label="Números do projeto"></ul>
+      <div class="modal-grid">
+        <div>
+          <h4>o que tem dentro</h4>
+          <ul class="modal-points" id="modal-points"></ul>
+        </div>
+        <div>
+          <h4>stack</h4>
+          <div class="modal-tags" id="modal-tags"></div>
+        </div>
+      </div>
+      <p class="modal-note" id="modal-note"></p>
+      <div class="modal-links" id="modal-links"></div>
+      <a class="modal-cta" id="modal-cta" href="mailto:wendersonhgs@gmail.com">Conversar sobre este projeto <span aria-hidden="true">↗</span></a>
+    </div>
+  </dialog>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>
