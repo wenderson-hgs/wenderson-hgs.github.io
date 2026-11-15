@@ -212,7 +212,7 @@
       </div>
 
       <div class="hero-stats" aria-label="Números do portfólio">
-        <div class="stat"><b data-count="4" data-pad="2">04</b><span>projetos no portfólio</span></div>
+        <div class="stat"><b data-count="11" data-pad="2">11</b><span>projetos no portfólio</span></div>
         <div class="stat"><b data-count="3" data-pad="2">03</b><span>camadas: web, dados e hardware</span></div>
         <div class="stat"><b data-count="11" data-pad="2">11</b><span>testes no Chem Toolkit</span></div>
         <div class="stat stat--inf"><b>∞</b><span>curiosidade para continuar</span></div>
@@ -233,7 +233,7 @@
     <section class="work wrap" id="work" aria-labelledby="work-title">
       <div class="section-head mono reveal">
         <span>// 01 — projetos selecionados</span>
-        <span class="right">04 cases · 2025—2026 · status: ativo</span>
+        <span class="right">04 cases · 07 repos · 155 testes · 2025—2026</span>
       </div>
       <div class="work-title-row">
         <h2 class="section-title reveal" id="work-title" style="--delay:.05s">Projetos em <span class="thin">produção</span><span class="hero-dot">.</span></h2>
@@ -309,6 +309,63 @@
             <a href="mailto:wendersonhgs@gmail.com?subject=Ideia%20de%20projeto" class="text-link" data-cursor="conversar">Propor uma ideia <span aria-hidden="true">↗</span></a>
           </div>
         </article>
+      </div>
+
+      <div class="repo-block">
+        <div class="section-head mono reveal">
+          <span>// 02 — portfólio no github</span>
+          <span class="right">7 repos · 155 testes passando · node puro quando dá</span>
+        </div>
+        <div class="repo-grid">
+          <div class="repo-card reveal" style="--delay:.04s">
+            <div class="repo-top"><span>saas · ia · ocr</span></div>
+            <h3><a href="https://github.com/wenderson-hgs/cadernoia" target="_blank" rel="noopener" data-cursor="ver código">CadernoIA <span aria-hidden="true">↗</span></a></h3>
+            <p>Tirou a foto da questão → recebe a resposta, ajustada ao espaço livre do caderno. OCR da pergunta, medição do espaço e da letra, IA plugável.</p>
+            <div class="p-tags"><span class="tag">Next.js 16</span><span class="tag">React 19</span><span class="tag">Tailwind v4</span></div>
+          </div>
+
+          <div class="repo-card reveal" style="--delay:.07s">
+            <div class="repo-top"><span>api rest · node puro</span><span class="repo-meta">23 testes</span></div>
+            <h3><a href="https://github.com/wenderson-hgs/api-livros" target="_blank" rel="noopener" data-cursor="ver código">API Livros <span aria-hidden="true">↗</span></a></h3>
+            <p>CRUD de livros com JWT e scrypt escritos à mão, paginação, busca e uma página /docs interativa. Zero dependências.</p>
+            <div class="p-tags"><span class="tag">Node.js</span><span class="tag">JWT</span><span class="tag">scrypt</span></div>
+          </div>
+
+          <div class="repo-card reveal" style="--delay:.1s">
+            <div class="repo-top"><span>full-stack · node puro</span><span class="repo-meta">22 testes</span></div>
+            <h3><a href="https://github.com/wenderson-hgs/crud-alunos" target="_blank" rel="noopener" data-cursor="ver código">CRUD Alunos <span aria-hidden="true">↗</span></a></h3>
+            <p>Cadastro de alunos com login, busca e estatísticas; front-end vanilla servido pelo mesmo servidor.</p>
+            <div class="p-tags"><span class="tag">Node.js</span><span class="tag">JWT</span><span class="tag">Vanilla JS</span></div>
+          </div>
+
+          <div class="repo-card reveal" style="--delay:.13s">
+            <div class="repo-top"><span>web app · offline</span><span class="repo-meta">30 testes</span><a class="repo-live" href="https://wenderson-hgs.github.io/calculadora-conversor/" target="_blank" rel="noopener" data-cursor="ao vivo">ao vivo ↗</a></div>
+            <h3><a href="https://github.com/wenderson-hgs/calculadora-conversor" target="_blank" rel="noopener" data-cursor="ver código">Calculadora &amp; Conversor <span aria-hidden="true">↗</span></a></h3>
+            <p>Calculadora + 4 conversores (comprimento, massa, temperatura, moeda) com lógica pura testada. Abre e usa, sem instalar nada.</p>
+            <div class="p-tags"><span class="tag">Vanilla JS</span><span class="tag">UMD</span><span class="tag">Offline</span></div>
+          </div>
+
+          <div class="repo-card reveal" style="--delay:.16s">
+            <div class="repo-top"><span>jogo · canvas</span><span class="repo-meta">25 testes</span><a class="repo-live" href="https://wenderson-hgs.github.io/jogo-cobrinha/" target="_blank" rel="noopener" data-cursor="ao vivo">ao vivo ↗</a></div>
+            <h3><a href="https://github.com/wenderson-hgs/jogo-cobrinha" target="_blank" rel="noopener" data-cursor="ver código">Jogo da Cobrinha <span aria-hidden="true">↗</span></a></h3>
+            <p>Snake com lógica pura testável e RNG injetável, fila anti-reversão, recorde local e D-pad para celular.</p>
+            <div class="p-tags"><span class="tag">Canvas</span><span class="tag">Vanilla JS</span><span class="tag">UMD</span></div>
+          </div>
+
+          <div class="repo-card reveal" style="--delay:.19s">
+            <div class="repo-top"><span>sistema · regras de negócio</span><span class="repo-meta">39 testes</span></div>
+            <h3><a href="https://github.com/wenderson-hgs/biblioteca-escolar" target="_blank" rel="noopener" data-cursor="ver código">Biblioteca Escolar <span aria-hidden="true">↗</span></a></h3>
+            <p>Alunos, livros e empréstimos com regras de verdade: limite de 3 por aluno, prazo de 7 dias e detecção de atraso.</p>
+            <div class="p-tags"><span class="tag">Node.js</span><span class="tag">REST</span><span class="tag">Zero deps</span></div>
+          </div>
+
+          <div class="repo-card reveal" style="--delay:.22s">
+            <div class="repo-top"><span>tempo real · websocket</span><span class="repo-meta">16 testes</span></div>
+            <h3><a href="https://github.com/wenderson-hgs/chat-realtime" target="_blank" rel="noopener" data-cursor="ver código">Chat Realtime <span aria-hidden="true">↗</span></a></h3>
+            <p>Chat com WebSocket de verdade: lista de online, mensagens do sistema e indicador de digitando.</p>
+            <div class="p-tags"><span class="tag">WebSocket</span><span class="tag">Node.js</span><span class="tag">ws</span></div>
+          </div>
+        </div>
       </div>
     </section>
 
